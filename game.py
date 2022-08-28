@@ -55,11 +55,11 @@ def rule():
 def show_winner(winner):
     if winner == "X":
         player_points[0] += 1
-        showinfo("Game Ended", "Player 1 Win!")
+        showinfo("اتمام بازی", "بازیکن شماره 1 پیروز شد")
         reset()
     else:
         player_points[1] += 1
-        showinfo("Game Ended", "Player 2 Win!")
+        showinfo("اتمام بازی", "بازیکن شماره 2 پیروز شد")
         reset()
         
 def reset():
@@ -71,14 +71,14 @@ def reset():
 
 def check_draw():
     if "" not in results:
-        showinfo("Game Ended", "Game Was Draw!")
+        showinfo("اتمام بازی", "بازی مساوی شد")
         reset()
 
 def points():
     board_frame = tk.Frame(window)
     board_frame.grid(row=0)
-    label_player_one = tk.Label(board_frame, text="Player 1", font=("Aviny",16), padx=10)
-    label_player_two = tk.Label(board_frame, text="Player 2", font=("Aviny",16), padx=10)
+    label_player_one = tk.Label(board_frame, text="بازیکن 1", font=("Aviny",16), padx=10)
+    label_player_two = tk.Label(board_frame, text="بازیکن 2", font=("Aviny",16), padx=10)
     label_player_one.grid(row=0, column=0)
     label_player_two.grid(row=0, column=2)
 
